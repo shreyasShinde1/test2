@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book & Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="left" href="">Library Systme</a>
+        <a class="active" href="">Logout</a>
+        <a class="active" href="">Contact Us</a>
+        <a class="active" href="#registration">Register</a>
+        <a class="active" href="#books">Books</a>
+
+    </nav>
+</br>
+    <div id="books" class="books">
+         <h1>Books</h1>
+        <table border="1px" cellspacing="0"  >
+            <tr>
+                <th>Book id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availability</th>
+            </tr>
+            <tr>
+                <td class="id">1</td>
+                <td class="title"><a href="" class="link">Adventures of Tom Sawyer</a>
+                    <table border="1px" cellspacing="0" margin="5px" align="center">
+                        <tr>
+                             <td>Publication Date:2015 </td> 
+                        </tr>
+                        <tr>
+                            <td>Page Count:248</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:8175992913</td> 
+                        </tr>
+                    </table>
+                </td>
+                <td class="author">Mark Twain</td>
+                <td class="genre">Adventure fiction speculative fiction travelogue opinion journalism literary criticism polemic essay autobiography correspondence oration</td>
+                <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td class="id">2</td>
+                <td class="title"><a href="" class="link">Discovery of India</a> 
+                    <table border="1px" cellspacing="0">
+                        <tr>
+                            <td>Publication Date:1946</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:656</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:978-0143031031</td> 
+                        </tr>
+                    </table>
+                </td>
+                    <td class="author">Jawahar Lal Nehru</td>
+                    <td class="genre">Indian anti-colonial nationalist, secular humanist, social democrat, statesman</td>
+                    <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td class="id">3</td>
+                <td class="title"><a href="" class="link">India Divided</a> 
+                    <table border="1px" cellspacing="0">
+                        <tr>
+                            <td>Publication Date:2007</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:476</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:978-1406711783</td> 
+                        </tr>
+                    </table>
+                </td>
+                    <td class="author">Dr Rajendra Prasad</td>
+                    <td class="genre">Indian politician, lawyer, Indian independence activist, journalist & scholar</td>
+                    <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td class="id">4</td>
+                <td class="title"><a href="" class="link">Gita Rahasya</a> 
+                    <table border="1px" cellspacing="0">
+                        <tr>
+                            <td>Publication Date:1915</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:720</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:979-8128818874</td> 
+                        </tr>
+                    </table>
+                </td>
+                    <td class="author">Bal Gangadhar Tilak</td>
+                    <td class="genre">Indian nationalist, teacher</td>
+                    <td class="available">Available</td>
+            </tr>
+            <tr>
+                <td class="id">5</td>
+                <td class="title"><a href="" class="link">India Wins Freedom</a> 
+                    <table border="1px" cellspacing="0">
+                        <tr>
+                            <td>Publication Date:1988</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count:283</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN:978-8125005148</td> 
+                        </tr>
+                    </table>
+                </td>
+                    <td class="author">Abdul Kalam Aazad</td>
+                    <td class="genre"> Indian independence activist, Islamic theologian</td>
+                    <td class="available">Available</td>
+            </tr>
+        </table>
+    </div>
+</br>
+    <div id="registration" class="registration">
+        <h1>Register</h1>
+        <form action="" name="form" id="form">
+            <div>
+                <label for="fname">First Name</lable><br>
+                <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            </div>
+            <div>
+                <label for="lname">Last Name</lable><br>
+                <input type="text" name="lname" id="lname" placeholder="Last Name" required >
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label><br>
+                <input type="Date" name="dob" id="dob" required>
+            </div>
+            <div>
+                <label for="age">Age</lable><br>
+                <input type="number" name="age" id="age" min="5" max="100" required>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" required>
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div>
+                <label for="Cpassword">Confirm Password</label><br>
+                <input type="password" name="Cpassword" id="Cpassword" required> 
+            </div>
+        </br>
+            <div>
+                <label for="register"></label>
+                <button name="register" id="register">Register</button> 
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
